@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",  // Adjust the target ECMAScript version as needed
+    "module": "commonjs", // Adjust the module system as needed
+    "allowJs": true,   // Enable import statements for JavaScript files
+    "strict": true,    // Enable strict type checking (optional)
+    "esModuleInterop": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

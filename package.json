@@ -1,0 +1,24 @@
+{
+  "name": "express_boilerplate",
+  "version": "1.0.0",
+  "description": "Boiler Plate setup for an express application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "tsc && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "sreerag_rajan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.2"
+  }
+}

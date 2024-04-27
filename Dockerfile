@@ -16,7 +16,8 @@ WORKDIR /usr/src/app
 
 # Install pnpm.
 RUN --mount=type=cache,target=/root/.npm \
-    npm install -g pnpm@${PNPM_VERSION}
+    npm install -g pnpm@${PNPM_VERSION} \
+    pnpm i typescript
 
 ################################################################################
 # Create a stage for installing production dependecies.
@@ -42,8 +43,11 @@ RUN --mount=type=bind,source=package.json,target=package.json \
     --mount=type=cache,target=/root/.local/share/pnpm/store \
     pnpm install --frozen-lockfile
 
+
 # Copy the rest of the source files into the image.
 COPY . .
+# ADDING THE TYPESCRIPT INSTALLATION
+RUN pnpm install
 # Run the build script.
 RUN pnpm run build
 

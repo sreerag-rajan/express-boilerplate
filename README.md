@@ -46,13 +46,15 @@ The `infra` folder holds logic for various implementations. For example, connect
 1. Clone this repository:
 
 ```bash
-git clone <repository-url>
-Install dependencies:
+git clone https://github.com/sreerag-rajan/express-boilerplate.git
 ```
+
+### Install dependencies:
 ```bash
 cd project-root
 npm install
 ```
+
 ### Running the Application
 
 ```bash
